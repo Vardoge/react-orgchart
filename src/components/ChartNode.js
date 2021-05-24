@@ -89,8 +89,7 @@ const ChartNode = ({
     const node = e.target.closest("li");
     if (node) {
       const parent = node.parentNode.closest("li");
-      const isAncestorsCollapsed =
-        node && parent
+      const isAncestorsCollapsed = parent
           ? parent.firstChild.classList.contains("hidden")
           : undefined;
       const isSiblingsCollapsed = Array.from(
